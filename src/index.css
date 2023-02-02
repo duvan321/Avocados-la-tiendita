@@ -2,3 +2,43 @@
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
 
+.app{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+}
+.title{
+    font-size: 1.2rem;
+}
+.imagen{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    filter: brightness(70%);
+    transition: filter 2s;
+    transition: transform 2s;
+   
+}
+.imagen:hover {
+    transform: rotate(-5deg);
+    filter: brightness(100%);
+    
+  }
+  
+
+.price{
+    color: rgb(83, 77, 77);
+    margin-top: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+.container{
+background-color: rgb(55, 161, 55);
+
+}
+
+.container:hover{
+    background-color: rgb(26, 221, 26)
+}

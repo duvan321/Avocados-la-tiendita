@@ -19,7 +19,7 @@ window
     responseJson.data.forEach((item) => {
       //crear una imagen
       const imagen = document.createElement("img");
-      imagen.className = " h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6";
+      imagen.className = "imagen";
       imagen.src = `${baseUrl}${item.image}
       `;
      
@@ -28,13 +28,13 @@ window
       const title = document.createElement("h2");
 
       title.textContent = item.name;
-      title.className = "text-lg "; //crear un precio
+      title.className = "title "; //crear un precio
       const price = document.createElement("div");
-      price.className = "text-gray-600 mt-10 "
+      price.className = "price "
       price.textContent = item.price;
        
       const container = document.createElement("div");
-      container.className = 'w-2/3 flex flex-col bg-green-900 hover:bg-green-700'
+      container.className = 'container'
       container.append(imagen, title, price);
       todosLosItems.push(container);
     });
