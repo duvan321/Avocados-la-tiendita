@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://github.com/duvan321/Avocados-la-tiendita/",
+=======
+  "homepage": "https://duvan321.github.io/Avocados-la-tiendita/",
+>>>>>>> dc02ca19e436116c99aacb8f20335c86762d2927
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
