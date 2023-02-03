@@ -4,24 +4,28 @@
 
 .app {
   display: grid;
-  gap: 1rem;
-  grid-auto-rows: 15rem;
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 5rem;
+  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 15rem;
+    height: auto;
+    border-radius: 5%;
+    
 }
 .title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: darkgreen;
 }
-.imagen {
-  width: 6rem;
-  height: 6rem;
 
-  border-radius: 50%;
-  filter: brightness(70%);
-  transition: filter 2s;
-  transition: transform 2s;
-}
-.imagen:hover {
+#img:hover {
   transform: rotate(-5deg);
   filter: brightness(100%);
 }
@@ -32,21 +36,36 @@
   font-size: 2rem;
   cursor: pointer;
 }
-.container-items {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border:solid 0.1rem gray;
-  background-image: url(https://as.com/deporteyvida/imagenes/2017/07/23/portada/1500819395_065005_1500819504_noticia_normal.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
 
-.container-items:hover {
+
+#container-items:hover {
   background-color: rgb(26, 221, 26);
 }
 
-.button{
+.cards{
+    display: flex;
+    position: fixed;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
     width: 20rem;
+}
+.section{
+    padding: 2px;
+    text-align: center;
+}
+.titulo{
+    color: darkgreen;
+}
+
+.pie{
+    color: dimgrey;
+}
+
+.descricion{
+    color: darkolivegreen;
 }
