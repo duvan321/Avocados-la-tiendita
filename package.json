@@ -6,7 +6,9 @@
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
-    "install:husky": "husky install"
+    "install:husky": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "husky": "7",
@@ -14,5 +16,8 @@
     "pretty-quick": "^3.1.0",
     "snowpack": "^3.0.11",
     "tailwindcss": "^2.0.2"
+  },
+  "dependencies": {
+    "homepage": "^1.0.0"
   }
 }
