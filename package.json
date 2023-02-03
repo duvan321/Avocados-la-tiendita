@@ -1,14 +1,13 @@
 {
-  "homepage": "https://github.com/duvan321/Avocados-la-tiendita/",
+  "homepage": "https://duvan321.github.io/Avocados-la-tiendita/",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
-    "install:husky": "husky install",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "install:husky": "husky install"
+   
   },
   "devDependencies": {
     "husky": "7",
@@ -16,8 +15,6 @@
     "pretty-quick": "^3.1.0",
     "snowpack": "^3.0.11",
     "tailwindcss": "^2.0.2"
-  },
-  "dependencies": {
-    "homepage": "^1.0.0"
   }
+  
 }
