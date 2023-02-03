@@ -1,44 +1,52 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "tailwindcss/dist/base.css";
+@import "tailwindcss/dist/components.css";
+@import "tailwindcss/dist/utilities.css";
 
-.app{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 15rem;
-    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+.app {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
 }
-.title{
-    font-size: 1.2rem;
+.title {
+  font-size: 1.5rem;
+  color: darkgreen;
 }
-.imagen{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    filter: brightness(70%);
-    transition: filter 2s;
-    transition: transform 2s;
-   
+.imagen {
+  width: 6rem;
+  height: 6rem;
+
+  border-radius: 50%;
+  filter: brightness(70%);
+  transition: filter 2s;
+  transition: transform 2s;
 }
 .imagen:hover {
-    transform: rotate(-5deg);
-    filter: brightness(100%);
-    
-  }
-  
-
-.price{
-    color: rgb(83, 77, 77);
-    margin-top: 4rem;
-    font-size: 1rem;
-    cursor: pointer;
-    
-}
-.container{
-background-color: rgb(55, 161, 55);
-
+  transform: rotate(-5deg);
+  filter: brightness(100%);
 }
 
-.container:hover{
-    background-color: rgb(26, 221, 26)
+.price {
+  color: darkolivegreen;
+  margin-top: 4rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.container-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border:solid 0.1rem gray;
+  background-image: url(https://as.com/deporteyvida/imagenes/2017/07/23/portada/1500819395_065005_1500819504_noticia_normal.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container-items:hover {
+  background-color: rgb(26, 221, 26);
+}
+
+.button{
+    width: 20rem;
 }
